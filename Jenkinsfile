@@ -21,7 +21,7 @@ pipeline {
         }
         stage('docker run'){
             steps{
-                sh 'sudo docker run -d -p 8080:10000 --name test test/changuii:latest'
+                sh 'sudo docker run -d -p 10000:8080 --name test test/changuii:latest'
             }
         }
     }
